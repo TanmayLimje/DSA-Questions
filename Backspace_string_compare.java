@@ -19,7 +19,6 @@
 // Explanation: s becomes "c" while t becomes "b".
 
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class Typed_out_Strings {
