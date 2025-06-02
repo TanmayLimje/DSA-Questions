@@ -12,7 +12,7 @@ public class NextGreaterElement {
     }
 
     public static int[] nextGreaterElement (int[] arr) {
-        int[] result = new int[arr.length];
+        int[] results = new int[arr.length];
 
         Stack<Integer> stack = new Stack<> ();
 
@@ -21,11 +21,11 @@ public class NextGreaterElement {
                 stack.pop ();
             }
 
-            result[i] = stack.isEmpty () ? -1 : stack.peek ();
+            results[i] = stack.isEmpty () ? -1 : stack.peek ();
 
             stack.push (arr[i]);
         }
 
-        return result;
+        return results;
     }
 }
